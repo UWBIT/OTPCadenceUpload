@@ -56,6 +56,9 @@ for row in list(sheet.iter_rows(min_row=2)):
         selected_value = row[[2, 3, 4][choice - 1]].value
         for i in [2, 3, 4]:
             row[i].value = selected_value
+            #If #2 was chosen, remove the red fill, no changes need to be made in OTP Admin Console
+            if choice == 2:
+                row[i].fill = PatternFill()
 
     # Text replace appl_qtr (column L)
     qtr_map = {1: "Winter", 2: "Spring", 3: "Summer", 4: "Autumn"}
