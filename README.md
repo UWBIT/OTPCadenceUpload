@@ -2,7 +2,7 @@
 
 ## Overview
 
-This Python script processes and cleans student contact data exported from an Excel file. It is designed to prepare the data for upload into **Cadence**, a texting platform used for communicating with incoming first-year and transfer students. The script ensures data consistency, validates phone numbers, and handles opt-out preferences.
+This Python script processes and cleans student contact data exported from Microsoft Access as an excel file. It is designed to prepare the data for upload into **Cadence**, a texting platform used for communicating with incoming first-year and transfer students. The script ensures data consistency, validates phone numbers, and handles opt-out preferences.
 
 ---
 
@@ -23,6 +23,7 @@ This Python script processes and cleans student contact data exported from an Ex
 - Python 3.x
 - `openpyxl` library
 - GUI environment (uses `tkinter` for file selection)
+- Exported "Mongoose Contact List" from OTP Microsoft Access Database
 
 Install dependencies with:
 pip install openpyxl
